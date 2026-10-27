@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /opt/pyvenv/bin/python
+cachedir: .pytest_cache
+metadata: {'Python': '3.13.5', 'Platform': 'Linux-6.18.55-x86_64-with-glibc2.41', 'Packages': {'pytest': '9.0.2', 'pluggy': '1.6.0'}, 'Plugins': {'anyio': '4.13.0', 'ddtrace': '4.4.0', 'Faker': '40.1.2', 'asyncio': '1.3.0', 'cov': '7.0.0', 'json-report': '1.5.0', 'metadata': '3.1.1'}, 'PLATFORM': 'linux/amd64', 'CI': 'true'}
+rootdir: /mnt/data/Segunda_Universidad_B0B_U0B1_Dia01/lab
+plugins: anyio-4.13.0, ddtrace-4.4.0, Faker-40.1.2, asyncio-1.3.0, cov-7.0.0, json-report-1.5.0, metadata-3.1.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 16 items
+
+test_demo_logica.py::test_conversiones_y_rangos PASSED                   [  6%]
+test_demo_logica.py::test_puertas_tabla_completa[0-0-esperados0] PASSED  [ 12%]
+test_demo_logica.py::test_puertas_tabla_completa[0-1-esperados1] PASSED  [ 18%]
+test_demo_logica.py::test_puertas_tabla_completa[1-0-esperados2] PASSED  [ 25%]
+test_demo_logica.py::test_puertas_tabla_completa[1-1-esperados3] PASSED  [ 31%]
+test_demo_logica.py::test_entradas_invalidas[2-1] PASSED                 [ 37%]
+test_demo_logica.py::test_entradas_invalidas[0-3] PASSED                 [ 43%]
+test_demo_logica.py::test_entradas_invalidas[-1-0] PASSED                [ 50%]
+test_demo_logica.py::test_entradas_invalidas[1-2] PASSED                 [ 56%]
+test_demo_logica.py::test_entradas_invalidas[True-1] PASSED              [ 62%]
+test_demo_logica.py::test_leyes_booleanas PASSED                         [ 68%]
+test_demo_logica.py::test_puertas_desde_nand PASSED                      [ 75%]
+test_demo_logica.py::test_medio_sumador PASSED                           [ 81%]
+test_demo_logica.py::test_mayoria_y_paridad_exhaustivos PASSED           [ 87%]
+test_demo_logica.py::test_overflow_int8 PASSED                           [ 93%]
+test_demo_logica.py::test_cuantizacion_y_memoria PASSED                  [100%]
+
+============================== 16 passed in 0.08s ==============================

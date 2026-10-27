@@ -1,0 +1,46 @@
+SEGUNDA UNIVERSIDAD | B0-B | U0-B.1 | DIA 1
+
+A. REPRESENTACION
+   42 -> 00101010
+  127 -> 01111111
+  255 -> 11111111
+  8 bits: unsigned=(0, 255); signed=(-128, 127)
+  16 bits: unsigned=(0, 65535); signed=(-32768, 32767)
+  32 bits: unsigned=(0, 4294967295); signed=(-2147483648, 2147483647)
+
+B. TABLAS DE VERDAD
+  A B | AND OR XOR NAND NOR
+  0 0 | 0   0   0   1   1
+  0 1 | 0   1   1   1   0
+  1 0 | 0   1   1   1   0
+  1 1 | 1   1   0   0   0
+  NOT(0) = 1 ; NOT(1) = 0
+
+C. LEYES BOOLEANAS
+  De Morgan / distributiva / idempotencia: PASS en 8 combinaciones
+
+D. SUMA Y PARIDAD
+  0 + 0 = 00 (base 2)
+  0 + 1 = 01 (base 2)
+  1 + 0 = 01 (base 2)
+  1 + 1 = 10 (base 2)
+  Paridad impar [1,0,1,1] = 1
+
+E. UNIVERSALIDAD DE NAND
+  NOT, AND, OR, XOR, NOR con NAND: PASS en 4 combinaciones
+
+F. CIRCUITOS COMBINACIONALES
+  Mayoria: PASS en 8 combinaciones
+  Paridad par 3 bits: PASS en 8 combinaciones
+
+G. DESBORDAMIENTO
+  np.int8(127) + np.int8(1) = -128; aviso NumPy=True
+  int de Python: 127 + 1 = 128
+  Nota: NumPy advierte sobre overflow en esta version; no se debe depender de ello.
+
+H. CUANTIZACION DE PIXELES
+  Original=[0, 128, 200, 255]; 4 bits=[0, 8, 12, 15]; errores=[0, 0, 8, 15]
+  Almacenamiento original uint8=4 bytes; ideal 4 bits empaquetados=2 bytes
+  IMPORTANTE: uint8 de NumPy para valores cuantizados sigue usando 4 bytes.
+
+RESULTADO: REFERENCIA TECNICA VALIDADA (no equivale a gate individual).

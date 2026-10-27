@@ -47,4 +47,4 @@ def parentesis_balanceados(texto: str) -> bool:
 
 
 print(parentesis_balanceados("(a[b]{c})"))  # True
-print(parentesis_balanceados("(a[b)"))  # False
+print(parentesis_balanceados("()[]{}"))  # False
